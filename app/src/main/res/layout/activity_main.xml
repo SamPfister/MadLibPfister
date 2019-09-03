@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number: "
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/TextSize"
+        android:textColor="@color/colorText"
+        android:layout_margin="@dimen/margin"/>
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin"
+        android:ems="10"
+        android:textColor="@color/colorText"
+        android:inputType="number"
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/TextSize"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:text="Restaurant: "
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/TextSize"
+        android:textColor="@color/colorText"
+        android:layout_margin="@dimen/margin"/>
+
+    <EditText
+        android:id="@+id/restaurant1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_margin="@dimen/margin"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="@dimen/padding"
+        android:text=""
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/TextSize" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/TextSize"
+        android:textColor="@color/colorText"
+        android:layout_margin="@dimen/margin"
+        android:text="Day: " />
+
+    <EditText
+        android:id="@+id/day1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurant1"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/TextSize"
+        android:textColor="@color/colorText"
+        android:layout_margin="@dimen/margin"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/TextSize"
+        android:textColor="@color/colorText"
+        android:layout_margin="@dimen/margin"
+        android:text="Number over 1: " />
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="@dimen/padding"
+        android:text=""
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/TextSize" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/margin"
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/TextSize"
+        android:textColor="@color/colorText"
+        android:text="Food: "
+        />
+
+    <EditText
+        android:id="@+id/food1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number2"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin"
+        android:padding="@dimen/padding"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/TextSize"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food1"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="@dimen/margin"
+        android:text="Generate Mad Lib"
+        android:textColor="@color/colorPrimary"
+        android:onClick="sendInfo"/>
+
+</RelativeLayout>

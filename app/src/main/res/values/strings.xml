@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mad Lib Generator</string>
+    <string name="chooser">Select where you want to send your mad lib:</string>
+    <string name="title_activity_mad_lib_text">MadLibText</string>
+</resources>
