@@ -6,13 +6,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Button oval;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        oval = (Button)findViewById(R.id.oval);
+        oval.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendInfo(v);
+            }
+        });
     }
 
     public void sendInfo(View v) {
